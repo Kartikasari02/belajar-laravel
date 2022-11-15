@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+//URL About
+Route::get('about', function () {
+    return 'Ini Halaman About';
+});
+
 //URL Index / Home
 Route::get('/', function () {
     $user = ['name' => 'David', 'role' => 'teller'];
