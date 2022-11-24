@@ -8,4 +8,6 @@ use App\Http\Controllers\HomeC;
 Route::redirect('/', 'home');
 Route::get('/home',[HomeC::class, 'index']);
 Route::get('/about',[HomeC::class, 'about']);
-Route::get('/contact',[HomeC::class, 'contact']);
+Route::get('/pesertadidik',[HomeC::class, 'pesertadidik']);
+Route::get('/eskul',[HomeC::class, 'eskul']);
+Route::get('/prestasi',[HomeC::class, 'prestasi']);

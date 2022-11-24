@@ -1,13 +1,15 @@
-<h1> KWU APP | @yield('title')</h1>
-<nav> 
+<h1>APP-MIMAKE| @yield('title')</h1>
+<nav>
     <ul>
-        <!-- http://127.0.0.1:8000/home -->
+        {{-- http://localhost:8000/home --}}
         <li><a href="{{ url('home') }}">Home</a></li>
         <li><a href="{{ url('about') }}">About</a></li>
-        <li><a href="{{ url('contact') }}">Contact</a></li>
+        <li><a href="{{ url('eskul') }}">Eskul</a></li>
+        <li><a href="{{ url('prestasi') }}">Prestasi</a></li>
+        <li><a href="{{ url('pesertadidik') }}">Pesertadidik</a></li>
     </ul>
 </nav>
-<hr/>
-<div> 
+<hr />
+<div>
     @yield('content')
 </div>

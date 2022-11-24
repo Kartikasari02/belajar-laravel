@@ -3,6 +3,5 @@
 @section('title', 'Home Page')
 
 @section('content')
-    <h2>Selamat Datang, {{$name}} .
-        Kamu login sebagai {{ $role }}.</h2>
+    <h2>Selamat Datang Di SMKN 1 SUBANG Website</h2>
 @endsection
