@@ -24,7 +24,7 @@ class eskul extends Seeder
             "jumlahanggota" => '42'
         ]);
 
-        DB::table('eskul')->insert([
+        DB::table('eskul')->insert([ 
         "id" => '02',
             "namaeskul" => 'HOVER',
             "namapembina" => 'Asep Ramdan',
