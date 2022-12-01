@@ -1,24 +1,25 @@
 @extends('layout')
 
-@section('title', 'Contact Page')
+@section('title', 'Barang Page')
 
 @section('content')
-    <h2>Contact</h2>
     <div> 
        <table cellpadding=10 cellspacing=0 border=1>
             <tr>
-                <th>No</th>
-                <th>NIS</th>
-                <th>Nama Lengkap</th>
-                <th>Jenis Kelamin</th>
+                <th>Id</th>
+                <th>namabarang</th>
+                <th>qty</th>
+                <th>harga</th>
+                <th>barcode</th>
                 <th>Waktu Entri</th>
             </tr>
             @foreach($data as $person)
             <tr>
                 <td>{{$loop->iteration}}</td>
-                <td>{{$person->nis}}</td>
-                <td>{{$person->namalengkap}}</td>
-                <td>{{$person->jk}}</td>
+                <td>{{$person->namabarang}}</td>
+                <td>{{$person->qty}}</td>
+                <td>{{$person->harga}}</td>
+                <td>{{$person->barcode}}</td>
                 <td>{{$person->created_at}}</td>
             </tr> 
             @endforeach
